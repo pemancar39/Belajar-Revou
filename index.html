@@ -4,10 +4,98 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Halaman Tes nihh</title>
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-	<h1>Hello World!</h1>
-	<h2>Ini Teddy</h2>
-	<h3>Baris tambahan</h3>
+	<p class="text-3xl pb-4 text-blue-500 font-bold pl-6 pt-4 bg-yellow-100">Hello World!</p>
+	<hr/>
+	<h2>Ini Teddy <i>Apriana</i></h2>
+	<p>Baris <b>tebal</b> tambahan <br/> baris lagi
+	<sub>bawah</sub><sup>kuadrat</sup>
+	</p>
+	<p id="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit a, sed voluptates nam esse totam ea perferendis doloribus vero facilis, mollitia soluta accusamus cupiditate, odio quasi voluptate amet eaque maxime?</p>
+	<!-- ini komentar -->
+	<br/>
+	<h1>Formulir</h1>
+	<form>
+		<label>Nama</label>
+		<input type="text" />
+		<br/>
+		<label>Umur</label>
+		<input type="number" min="0" max="100"/>
+		<br/>
+		<label>Kamu siapa?</label>
+		<select>
+			<option value="lupa">Lupa</option>
+			<option value="ingat">Ingat</option>
+		</select>
+		<br/>
+		<label>Komentar</label>
+		<textarea rows="5" cols="30" placeholder="Tulis kalimat di sini"></textarea>
+		<br/>
+		<label>Jenis kelamin</label>
+		<input name="jenis_kelamin" type="radio" value="Pria">Pria
+		<input name="jenis_kelamin" type="radio" value="Wanita">Wanita
+		<br/>
+		<input type="checkbox"/>Saya setuju dengan syarat dan ketentuan
+	</form>
+	<br/>
+	<h1>Bullet point</h1>
+	<ul>
+		<!-- unordered list -->
+		<li>Satu <p>Angka pertama</p></li>
+		<li>Dua</li>
+		<li>Tiga</li>
+		<!-- list item -->
+	</ul>
+	<!-- ordered list -->
+	<ol type="I">
+		<li>Bali</li>
+		<li>Bandung</li>
+		<li>Cimahi</li>
+	</ol>
+	<ul type="square">
+		<li>Apakah</li>
+		<li>Itu</li>
+	</ul>
+<h1>Tabel</h1>
+	<table border="1">
+		<thead>
+			<tr>
+				<th>Company</th>
+				<th>Contact</th>
+				<th>Country</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>TE Corp.</td>
+				<td>+62</td>
+				<td>Indonesia</td>
+			</tr>
+		</tbody>
+		<thead>
+		<tr>
+			<th>Company</th>
+			<th>Contact</th>
+			<th>Country</th>
+		</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Bali</td>
+				<td>+62</td>
+				<td>Malaysia</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h1>Gambar</h1>
+	<img src="./icon.JPG"
+	height="200px" alt="ikon"/>
+
+	<h1>Link</h1>
+	<a href="https://suarpemancar.com" target="_blank">Suar Pemancar</a>
+	<a href="#lorem">Go to lorem</a>
 </body>
 </html>
